@@ -1,0 +1,33 @@
+*{margin:0;padding:0;}
+body {
+  max-width: 960px;width:100%;margin:2em auto;
+  font: 14px "微软雅黑","Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ul,li{list-style: none;}
+a {
+  color: #00B7FF;cursor:pointer;text-decoration: none;
+}
+p{line-height:24px;margin: 1em 0;}
+header{padding:.5em 0;margin-left: 18%;border-bottom:1px solid #ccc;}
+nav{float: left;width:12%;font-family: "Microsoft YaHei";min-width: 70px;
+  font-size:1.1em;text-transform: uppercase;text-align:right;}
+nav a{
+  display: block;padding:.7em 1em;color:#000;background-color: #00B7FF;border-bottom:1px solid #044;
+}
+nav a:hover{background-color:#800;color:#f9f9f9;-webkit-transition: color .2s linear;}
+article{font-size: 16px;padding-top:.5em;float:left;margin-left:6%;}
+article a{color:#d00;}
+article a:hover{color:#333;text-decoration:underline;}
+.info{font-size:14px;}
+
+
+
+/*头部导航和用户信息小于1360px的时候，使用下边的样式*/
+@media screen and (max-width:420px){
+  nav{width: 6%;}
+  nav a{}
+  article{margin-left:1%;}
+}
+
+
+

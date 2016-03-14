@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  include ./includes/header
+  article
+    div 这是主页
+    - if(success)
+      div success
+    - if(error)
+      div error
+  include ./includes/footer
+
+
