@@ -12,10 +12,10 @@ header{padding:.5em 0;margin-left: 18%;border-bottom:1px solid #ccc;}
 nav{float: left;width:12%;font-family: "Microsoft YaHei";min-width: 70px;
   font-size:1.1em;text-transform: uppercase;text-align:right;}
 nav a{
-  display: block;padding:.7em 1em;color:#000;background-color: #00B7FF;border-bottom:1px solid #044;
+  display: block;padding:.7em 1em;color:#000;border-bottom:1px solid #044;transition:all 0.6s ease;
 }
-nav a:hover{background-color:#800;color:#f9f9f9;-webkit-transition: color .2s linear;}
-article{font-size: 16px;padding-top:.5em;float:left;margin-left:6%;}
+nav a:hover{transform:rotateY(360deg); transition:all 0.3s ease;}
+article{font-size: 16px;padding-top:.5em;float:left;margin-left:6%;width: 70%;}
 article a{color:#d00;}
 article a:hover{color:#333;text-decoration:underline;}
 .info{font-size:14px;}

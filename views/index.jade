@@ -3,11 +3,22 @@ extends layout
 block content
   include ./includes/header
   article
-    div 这是主页
-    - if(success)
-      div success
-    - if(error)
-      div error
+    each post in posts
+      p
+        h2
+          a(href="javascript:;") #{post.title}
+      p(class="info")
+        span 作者：
+        a(href="javascript:;") #{post.author}
+        span  | 日期：
+        a(href="javascript:;") #{post.time}
+      p #{post.post}
+      //  :markdown
+    //div 这是主页
+   // - if(success)
+   //   div success
+  //  - if(error)
+   //   div error
   include ./includes/footer
 
 

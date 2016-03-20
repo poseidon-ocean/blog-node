@@ -60,7 +60,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //user信息存放
 app.use(function(req, res, next){
   console.log("app.usr local");
-  res.locals.user = req.session.user;
+  res.locals.username = req.session.username;
   res.locals.post = req.session.post;
   var error = req.flash('error');
   res.locals.error = error.length ? error : null;
